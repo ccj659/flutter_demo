@@ -10,6 +10,7 @@
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app/demo/bottom_navigation_bar_demo.dart';
 import 'package:flutter_app/model/post.dart';
 
 void main() => runApp(MyApp());
@@ -33,12 +34,6 @@ class MyApp extends StatelessWidget {
 
 class Home extends StatelessWidget {
   static String _title = "航班列表";
-
-  var _currentIndex=0;
-
-  void _ontabHandler(int index){
-    setState();
-  }
 
   Widget _listBuilder(BuildContext context, int index) {
     return Container(
@@ -90,26 +85,7 @@ class Home extends StatelessWidget {
             Tab(text: "关注"),
           ]),
         ),
-        bottomNavigationBar:
-            BottomNavigationBar(type: BottomNavigationBarType.fixed,
-                currentIndex: _currentIndex,
-                onTap: _ontabHandler,
-                items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.flight),
-            title: Text("航班查询"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.filter_drama),
-            title: Text("气象信息"),
-          ),
-          //  BottomNavigationBarItem(icon: Icon(Icons.card_travel),title:Text("数据分析"),),
-          //BottomNavigationBarItem(icon: Icon(Icons.my_location),title:Text("飞行区监控"),),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            title: Text("我的"),
-          ),
-        ]),
+        bottomNavigationBar: BottomNavigationBarDemo(),
 //      body: new Center(
 //        child: new Counter(),
         // ),
@@ -124,8 +100,6 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-
 
 
 
