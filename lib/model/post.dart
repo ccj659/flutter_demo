@@ -1,108 +1,174 @@
 class Post {
   Post({
-    this.title,
-    this.author,
-    this.imageUrl,
-    this.description,
+    this.id,
+    this.airport,
+    this.plan,
+    this.real,
+    this.status,
+    this.position,
   });
 
-  final String title;
-  final String author;
-  final String imageUrl;
-  final String description;
+  
+
+
+  final String id;
+  final String airport;
+  final String plan;
+  final String real;
+  final String status;
+  final String position;
+  
+  
 
   bool selected = false;
 }
 
 final List<Post> posts = [
   Post(
-    title: 'Candy Shop',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',
-    imageUrl: 'https://resources.ninghao.org/images/candy-shop.jpg',
+    id: '航班号\n机号',
+    airport: '机场',
+    plan: "计飞\n实飞",
+    real: '记达\n实达',
+    status: "状态",
+    position: "行李转盘\n机位"
   ),
   Post(
-    title: 'Childhood in a picture',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/childhood-in-a-picture.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Contained',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/contained.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Dragon',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/dragon.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Free Hugs',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/free_hugs.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Gravity Falls',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/gravity-falls.png',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Icecream Truck',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/icecreamtruck.png',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'keyclack',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/keyclack.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Overkill',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/overkill.png',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Say Hello to Barry',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/say-hello-to-barry.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Space Skull',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/space-skull.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'The Old Fashioned',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/the-old-fashioned.png',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Tornado',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/tornado.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'Undo',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/undo.jpg',
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
   ),
   Post(
-    title: 'White Dragon',
-    author: 'Mohamed Chahin',
-    description: 'Esse ut nulla velit reprehenderit veniam sint nostrud nulla exercitation ipsum. Officia deserunt aliquip aliquip excepteur eiusmod dolor. Elit amet ipsum labore sint occaecat dolore tempor officia irure voluptate ad. Veniam laboris deserunt aute excepteur sit deserunt dolor esse dolor velit sint nulla anim ut. Reprehenderit voluptate adipisicing culpa magna ea nulla ullamco consectetur. Cupidatat adipisicing consequat adipisicing sit consectetur dolor occaecat.',    
-    imageUrl: 'https://resources.ninghao.org/images/white-dragon.jpg',
-  )
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
+  ),
+  Post(
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
+  ),
+  Post(
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
+  ),
+  Post(
+      id: '9C8709\nB6386',
+      airport: '桂林\n揭阳',
+      plan: "0915\n0925",
+      real: '1035\n1052',
+      status: "到达\n已保障完成",
+      position: "2\n12(廊)"
+  ),
+
+
+
 ];

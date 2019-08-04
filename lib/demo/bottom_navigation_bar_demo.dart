@@ -16,7 +16,7 @@ class BottomNavigationBarDemo extends StatefulWidget{
 class _BottomNavigationBarDemo extends State<BottomNavigationBarDemo>{
 
 
-  var _currentIndex=0;
+  int _currentIndex=0;
 
   void _ontabHandler(int index){
     _currentIndex=index;
