@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './post_show.dart';
 import '../model/post.dart';
+import 'detail.dart';
 
 class ListViewDemo extends StatelessWidget {
   Widget _listItemBuilder(BuildContext context, int index) {
@@ -44,7 +45,7 @@ class ListViewDemo extends StatelessWidget {
                 highlightColor: Colors.white.withOpacity(0.1),
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => PostShow(post: posts[index]))
+                    MaterialPageRoute(builder: (context) => DetailDemo(post: posts[index]))
                   );
                 }
               ),

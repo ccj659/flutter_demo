@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/demo/listview_demo.dart';
 import '../model/post.dart';
 
 class PostShow extends StatelessWidget {
@@ -22,7 +21,9 @@ class PostShow extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(32.0),
             width: double.infinity,
-            child:   ListViewDemo(),
+            child: Column(children: <Widget>[
+              FlatButton(child: Text(post.status),)
+            ],) ,
           ),
         ],
       ),
